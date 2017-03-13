@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="wage" namespace="/wage" extends="default">
+
+        <action name="selwage_sel" class="action.wageaction" method="sel">
+        	
+        	<result name="asd">/money1.jsp</result>
+        	
+        </action>
+        <action name="selwage_seg" class="action.wageaction" method="selg">
+        	<result name="liu">/money2.jsp</result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+    
+</struts>

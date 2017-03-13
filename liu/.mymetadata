@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="liu"
+  id="myeclipse.1451218715434"
+  context-root="/liu"
+  j2ee-spec="5.0"
+  archive="liu.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

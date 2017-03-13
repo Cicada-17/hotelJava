@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+		<package name="ajax" namespace="/" extends="json-default">
+			<action name="*staffaction" class="action.staffaction" method="{1}">
+				<result  type="json">
+					<!--  <param name="contentType">text/plain</param>-->
+					<param name="root">result</param>
+				</result>
+				
+			</action>
+			<action name="*wageaction" class="action.wageaction" method="{1}">
+				<result  name="g" type="json">
+					<param name="root">liu</param>
+				</result>
+			</action>
+			<action name="*_liu" class="action.gwageaction" method="{1}">
+				<result name="money2" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="yuangong" class="action.moneyaction" method="acc">
+				<result name="qw" type="json">
+					<param name="root">liu</param>
+				</result>
+			</action>
+			<action name="jingli" class="action.moneyaction" method="jing">
+				<result name="asd" type="json">
+					<param name="root">liu</param>
+				</result>
+			</action>
+			<action name="user" class="action.staffaction" method="user">
+				<result name="cg" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="addstaff" class="action.staffaction" method="add">
+				<result name="add" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="findstaffbyid" class="action.staffaction" method="findbyid">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="altstaff" class="action.staffaction" method="updstaff">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="delstaff" class="action.staffaction" method="delstaffbyid">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="findmoney" class="action.moneyaction" method="findmbymnd">
+				<result name="ok" type="json">
+					<param name="root">liu</param>
+				</result>
+			</action>
+			<action name="findgwagebyid" class="action.gwageaction" method="findbyid">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="updgwage" class="action.gwageaction" method="updgwage">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="money3begin" class="action.dwageaction" method="begin">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="finddwagebyid" class="action.dwageaction" method="findbyid">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="upddwage" class="action.dwageaction" method="upddwage">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="fagongzi" class="action.moneyaction" method="fagongzi">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+			<action name="updpassword" class="action.sysuseraction" method="updpass">
+				<result name="ok" type="json">
+					<param name="root">result</param>
+				</result>
+			</action>
+		</package>
+	</struts>
